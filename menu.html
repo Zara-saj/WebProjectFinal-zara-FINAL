@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/external.css">
+    <title>menu</title>
+
+    <style>
+    
+        /* Main Menu Section Layout */
+        #menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 23px; /* Reduced gap for tighter horizontal spacing */
+            padding: 20px;
+        }
+    
+        /* Image Styling */
+        #intro-image{
+            flex: 0 0 49%; /* Slightly increased width for closer alignment */
+            max-width: 49%;
+            object-fit: cover;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #E07A5F;
+            margin-bottom: 5px; /* Small bottom margin for better vertical spacing */
+        }
+    
+        /* Match heights of menu sections with images */
+        #menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            gap: 10px;
+            flex: 0 0 49%; /* Matches width with images for better alignment */
+        }
+    
+        /* Menu Section Styling */
+        .menu-section {
+            background-color: #FFF;
+            padding: 15px;
+            border: 2px solid #E07A5F;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .menu-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+    
+        .menu-options {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+    
+        .menu-options li {
+            list-style: none;
+            font-size: 1rem;
+            color: #2C3E50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                </ul>
+                <h1 class="cafe-name">Cozy Cafe</h1>
+            </nav>
+        </div>
+        <h1 class="page-title">Menu</h1>
+    </header>
+
+    <main id="menu-section">
+        <!-- Coffee Image -->
+        <img id="intro-image" src="image/coffee.jpg" alt="Coffee">
+
+        <section id="menu">
+            <!-- Cold Drinks Section -->
+            <div class="menu-section">
+                <h2>Cold Drinks</h2>
+                <ul class="menu-options">
+                    <li>Iced Latte</li>
+                    <li>Iced Americano</li>
+                    <li>Cold Brew</li>
+                    <li>Frappuccino</li>
+                    <li>Iced Mocha</li>
+                    <li>Iced Tea</li>
+                    <li>Iced Matcha Latte</li>
+                    <li>Smoothie</li>
+                    <li>Fresh Juice</li>
+                    <li>Milkshake</li>
+                    <li>Iced Caramel Macchiato</li>
+                    <li>Arnold Palmer</li>
+                </ul>
+            </div>
+
+            <!-- Hot Drinks Section -->
+            <div class="menu-section">
+                <h2>Hot Drinks</h2>
+                <ul class="menu-options">
+                    <li>Espresso</li>
+                    <li>Latte</li>
+                    <li>Cappuccino</li>
+                    <li>Hot Chocolate</li>
+                    <li>Americano</li>
+                    <li>Macchiato</li>
+                    <li>Mocha</li>
+                    <li>Flat White</li>
+                    <li>Chai Latte</li>
+                    <li>Green Tea</li>
+                    <li>Herbal Tea</li>
+                    <li>English Breakfast</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section id="menu">
+            <div class="menu-section">
+                <h2>Desserts</h2>
+                <ul class="menu-options">
+                    <li>Cheesecake</li>
+                    <li>Brownie</li>
+                    <li>Tiramisu</li>
+                    <li>Macarons</li>
+                    <li>Apple Pie</li>
+                    <li>Chocolate Mousse</li>
+                    <li>Creme Brulee</li>
+                    <li>Ice Cream</li>
+                    <li>Panna Cotta</li>
+                    <li>Fruit Tart</li>
+                    <li>Baklava</li>
+                    <li>Cannoli</li>
+                </ul>
+            </div>
+
+            <!-- Cakes Section -->
+            <div class="menu-section">
+                <h2>Cakes</h2>
+                <ul class="menu-options">
+                    <li>Chocolate Cake</li>
+                    <li>Carrot Cake</li>
+                    <li>Red Velvet Cake</li>
+                    <li>Black Forest Cake</li>
+                    <li>Vanilla Cake</li>
+                    <li>Fruit Cake</li>
+                    <li>Lemon Cake</li>
+                    <li>Buttercream Cake</li>
+                    <li>Rainbow Cake</li>
+                    <li>Pineapple Cake</li>
+                    <li>Strawberry Shortcake</li>
+                    <li>Coffee Cake</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chocolate Cake Image -->
+        <img id="intro-image" src="image/chocolate-cake.jpg" alt="Chocolate Cake">
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-bcolor">
+        <div class="social-media">
+            <!-- Social media links -->
+            <a href="https://facebook.com" class="footer-link" target="_blank">
+                <img src="image/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" class="footer-link" target="_blank">
+                <img src="image/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" class="footer-link" target="_blank">
+                <img src="image/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com" class="footer-link" target="_blank">
+                <img src="image/tiktok-icon.png" alt="Tiktok" class="social-icon">
+            </a>
+        </div>
+        <p class="footer-text">Copyright Cozy cafe &copy;</p><br>
+    </footer>
+
+</body>
+</html>

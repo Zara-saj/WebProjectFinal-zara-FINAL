@@ -1,0 +1,254 @@
+/* Apply box-sizing to all elements for consistent sizing */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    margin: 0%;
+    background-color: #F4F1DE;
+    font-family: 'Arial', sans-serif; /* Clean, professional font */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #E07A5F;
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;  /* Space above the navbar */
+    margin-bottom: 60px;  /* Space below the navbar */
+}
+
+/* Links inside the navbar */
+nav a {
+    display: inline-block;
+    color: #F4F1DE;                  /* Light text color for contrast */
+    padding: 10px 15px;              /* Adjusted padding for balance */
+    text-decoration: none;
+    font-size: 1.1rem;               /* Slightly larger font size */
+    font-weight: 500;                /* Semi-bold text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    border-radius: 5px;              /* Rounded corners */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #D65A3F;       /* Accent color */
+    color: #F4F1DE;                  /* Dark text on hover */
+}
+
+/* Navbar unordered list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;                       /* Space between links */
+    justify-content: center;         /* Center-align links */
+}
+
+/* Cafe name alignment */
+.cafe-name {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto; /* Aligns the cafe name to the right */
+}
+
+/* General heading styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #2C3E50;                  /* Primary color */
+    margin-bottom: 20px;             /* Space below heading */
+}
+
+/* Page title styling */
+.page-title {
+    text-align: center;
+    font-size: 3rem;                 /* Match About Us title size */
+    font-weight: bold;
+    color: #2C3E50;                  /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+/* Paragraph content styling */
+.intro-content-p {
+    color: #2C3E50;                  /* Warm secondary color */
+    font-size: 1.3rem;               /* Font size */
+    line-height: 1.8;                /* Increased line spacing */
+    text-align: justify;             /* Justify text for equal line endings */
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* Responsive design for screens under 768px */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;      /* Stack items vertically */
+        height: auto;
+    }
+    nav ul {
+        flex-direction: column;      /* Stack links vertically */
+    }
+}
+
+/* Form container styling */
+#form-container {
+    max-width: 600px;                /* Limit form width */
+    margin: 20px auto;               /* Center the form */
+    padding: 30px;                   /* Padding inside container */
+    border: 2px solid #E07A5F;       /* Professional border color */
+    border-radius: 10px;             /* Rounded corners */
+    background-color: #F4F1DE;       /* Light background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form heading styling */
+#form-heading {
+    text-align: center;              /* Center-aligned */
+    margin-bottom: 20px;             /* Space below heading */
+    font-size: 1.8rem;               /* Larger font size */
+    color: #E07A5F;                  /* Primary heading color */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;             /* Space between form elements */
+}
+
+/* Label styling */
+label {
+    font-weight: bold;               /* Bold font */
+    display: block;                  /* Block element */
+    margin-bottom: 5px;              /* Space between label and input */
+    color: #E07A5F;                  /* Warm secondary color */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;                     /* Full-width inputs */
+    padding: 10px;                   /* Inner padding */
+    font-size: 1rem;                 /* Readable font */
+    border: 1px solid #CCC;          /* Light gray border */
+    border-radius: 5px;              /* Rounded corners */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle inset shadow */
+    outline: none;                   /* Remove default outline */
+}
+
+/* Focus effect on inputs */
+input:focus {
+    border-color: #E07A5F;           /* Highlighted border */
+    box-shadow: 0 0 5px rgba(224, 122, 95, 0.5); /* Glow effect */
+}
+
+/* Form button container */
+.form-actions {
+    display: flex;                   /* Arrange buttons horizontally */
+    justify-content: space-between;  /* Space between buttons */
+    margin-top: 20px;                /* Space above buttons */
+}
+
+/* General button styling */
+.btn {
+    padding: 10px 20px;              /* Padding for buttons */
+    font-size: 1rem;                 /* Font size */
+    border: none;                    /* Remove border */
+    border-radius: 5px;              /* Rounded corners */
+    cursor: pointer;                 /* Pointer cursor on hover */
+    background-color: #E07A5F;       /* Primary color */
+    color: #F4F1DE;                  /* Button text color */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Reset button styling */
+.btn.reset {
+    background-color: #CCC;          /* Neutral color */
+    color: #333;                     /* Dark text */
+}
+
+/* Hover effects */
+.btn:hover {
+    background-color: #D65A44;       /* Slightly darker on hover */
+}
+
+.btn.reset:hover {
+    background-color: #999;          /* Slightly darker reset hover */
+}
+
+/* Footer background color */
+.footer-bcolor {
+    background-color: #E07A5F;
+    text-align: center; /* Center-align all text inside the footer */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+/* Class for back-to-top link in footer */
+.footer-link {
+    border: 2px solid #E07A5F; /* Subtle border with brand color */
+    background-color: #E07A5F; /* Set background color by default */
+    color: #ffffff;           /* White text color for contrast */
+    padding: 10px 20px;       /* Add padding for a button-like appearance */
+    font-size: 1.2rem;        /* Adjust font size for readability */
+    font-weight: bold;        /* Make the text stand out */
+    text-transform: uppercase; /* Professional, clean look */
+    text-decoration: none;    /* Remove underline */
+    border-radius: 5px;       /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-link:hover {
+    background-color: #D65A44; /* Change to darker shade on hover */
+    color: #ffffff;            /* Keep white text for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Class for text in footer */
+.footer-text {
+    display: flex;            /* Use Flexbox for alignment */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    color: #ffffff;           /* White text for better contrast */
+    font-size: 1rem;          /* Balanced font size */
+    line-height: 1.5;         /* Comfortable spacing */
+    height: 50px;             /* Set a consistent height for alignment */
+    margin: 0;                /* Remove extra margins */
+}
+
+/* Social media container */
+.social-media {
+    display: flex;
+    justify-content: center;  /* Center the icons */
+    gap: 20px;                /* Increase space between icons */
+    margin: 15px 0;           /* Add spacing above and below */
+}
+
+/* Individual social media icons */
+.social-icon {
+    width: 40px;              /* Slightly larger size for visibility */
+    height: 40px;
+    border-radius: 50%;       /* Circular shape */
+    display: flex;
+    justify-content: center;  /* Center icon within */
+    align-items: center;
+    background-color: #E07A5F; /* Matching brand color background */
+    color: #ffffff;           /* White icon color */
+    font-size: 1.2rem;        /* Adjust icon size */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effects for social media icons */
+.social-icon:hover {
+    transform: scale(1.2);    /* Slightly enlarge icon */
+    background-color: #D65A44; /* Darker shade on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/external.css">
+    <title>About Us</title>
+
+    <style>
+        /* Styling for the intro container */
+        #intro-container {
+            display: flex; /* Create a side-by-side layout */
+            align-items: center; /* Center items vertically */
+            gap: 20px; /* Add space between the image and text */
+            padding-left: 30px; /* Move the content slightly away from the left edge */
+        }
+
+        /* Intro image styling */
+        #intro-image {
+            flex: 0 0 50%; /* Image takes 50% of the container's width */
+            max-width: 50%; /* Prevents the image from exceeding 50% width */
+            object-fit: cover; /* Maintains aspect ratio without distortion */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+            border: 5px solid #E07A5F; /* Orange border */
+        }
+
+        /* Center and enlarge the "About Us" title */
+        .about-us-title {
+            text-align: center;
+            font-size: 3rem; /* Adjust title size */
+            font-weight: bold;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+        <h1 class="cafe-name">Cozy Cafe</h1>
+    </nav>
+</header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Page Title -->
+        <h1 class="about-us-title">About Us</h1>
+
+        <!-- Intro Section -->
+        <section id="intro-container">
+            <img id="intro-image" src="image/tart.jpg" alt="Raspberry Tart">
+            <div class="intro-content">
+                <h2 style="font-size: 2.2rem;">How I Began My Journey</h2>
+                <p class="intro-content-p">
+                    My journey toward starting a café began with a deep love for coffee, community, and creativity. Growing up, I was always drawn to the warmth of cozy cafés, where strangers became friends over a cup of something special. The dream of creating my own space—one that offered not just great coffee but also a sense of belonging—started brewing in my heart. After years of experimenting with flavors, studying the art of brewing, and visiting countless cafés around the world, I finally decided to take the leap. My goal was to craft a space where people could gather, unwind, and experience a little joy in their day, whether through a rich cup of espresso or a warm, welcoming smile.
+                </p>
+            </div>
+        </section>
+
+        <!-- Additional Details -->
+        <p class="intro-content-p">
+            Our café is more than just a place to grab a cup of coffee—it's a haven for community, creativity, and connection. From the moment you step through our doors, you'll be greeted by the comforting aroma of freshly brewed coffee, the warm smiles of our team, and an atmosphere designed to make you feel at home. Every detail of our café has been carefully thought out, from the handpicked beans that ensure every cup is a masterpiece, to the cozy seating arrangements that invite you to linger a little longer. Our menu is a reflection of our passion for quality and variety, featuring not only exceptional coffee but also an array of teas, pastries, and light bites crafted with love and care. Whether you're looking for a quiet corner to work, a space to catch up with friends, or a moment of solitude to unwind, our café is here to offer you just that. We take pride in being a place where stories are shared, ideas are born, and memories are made—all over a steaming cup of your favorite drink. Every visit to our café is a step into a world where the ordinary transforms into the extraordinary, one sip at a time.
+        </p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-bcolor">
+        <div class="social-media">
+            <!-- Social Media Links -->
+            <a href="https://facebook.com" class="footer-link" target="_blank">
+                <img src="image/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" class="footer-link" target="_blank">
+                <img src="image/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" class="footer-link" target="_blank">
+                <img src="image/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com" class="footer-link" target="_blank">
+                <img src="image/tiktok-icon.png" alt="Tiktok" class="social-icon">
+            </a>
+        </div>
+
+        <!-- Copyright Information -->
+        <p class="footer-text">Copyright Cozy Café &copy; 2025</p>
+    </footer>
+</body>
+
+</html>

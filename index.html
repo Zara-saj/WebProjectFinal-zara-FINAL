@@ -1,0 +1,179 @@
+<!--
+Name: Zara Sajjadieh
+Course: Web Development
+Teacher: Ms. Hoitink
+School: Pembina Trails Collegiate
+Date Last Modified: 22 Jan 2025
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/external.css"> <!-- Link to external CSS file -->
+    <title>Home Page</title> <!-- Title of the webpage -->
+
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F1DE; /* Background color */
+            color: #2C3E50; /* Text color */
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Welcome Section */
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .welcome-section img {
+            width: 50%;
+            max-width: 1000px;
+            border-radius: 10px;
+            border: 5px solid #E07A5F; /* Image border style */
+        }
+
+        .welcome-section .welcome-text {
+            flex: 1;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Reviews Section Styling */
+        .reviews-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 30px;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-right: 25px; /* Added gap between reviews and page */
+            margin-left: 25px;
+        }
+
+        .review-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            border: 2px solid #E07A5F;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover animation for review box */
+        .review-box:hover {
+            transform: scale(1.05);
+        }
+
+        .review-box h3 {
+            color: #2C3E50;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .review-box p {
+            color: #7F8C8D;
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+            <h1 class="cafe-name">Cozy Cafe</h1>
+        </nav>
+        <h1 style="font-size: 50px;">Cozy Cafe</h1> <!-- Main title for the page -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <img src="image/home-image.jpg" alt="Coffee and Tiramisu"> <!-- Image of coffee and tiramisu -->
+            <div class="welcome-text, intro-content-p">
+                <h2>Welcome to Cozy Café!</h2> <!-- Subtitle -->
+                <p>
+                    Welcome to <b>Cozy Café</b>, where warmth meets flavor! Step into our inviting space, designed to be
+                    your perfect escape from the hustle and bustle. Whether you’re here to savor a freshly brewed coffee,
+                    indulge in our decadent desserts, or simply enjoy a moment of relaxation, we promise a delightful
+                    experience. Our menu is crafted with care, offering a variety of hot and cold beverages, irresistible
+                    cakes, and treats to satisfy every craving. At Cozy Café, every visit is more than just a
+                    meal—it’s a memory waiting to be made. Sit back, unwind, and let us serve you a taste of comfort!
+                </p>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <h2 style="text-align: center; font-size: 36px; color: #2C3E50; font-weight: 600; margin-bottom: 50px;">What Our Customers Are Saying</h2>
+        <div class="reviews-container">
+            <!-- Review Boxes -->
+            <div class="review-box">
+                <h3>Best Coffee Ever</h3>
+                <p>The atmosphere here is amazing, and the coffee is by far the best I've ever had. A cozy place to relax,
+                    read a book, or meet friends. Highly recommend!</p>
+            </div>
+
+            <div class="review-box">
+                <h3>Friendly Service</h3>
+                <p>The staff are so friendly and welcoming. I always feel at home when I visit this cafe. They go above and
+                    beyond to ensure you have a pleasant experience!</p>
+            </div>
+
+            <div class="review-box">
+                <h3>Delicious Pastries</h3>
+                <p>The pastries are freshly baked every day and are absolutely delicious! Whether you're in the mood for a
+                    croissant or a chocolate cake, they never disappoint.</p>
+            </div>
+        </div>
+    </main>
+
+    <br><br><br>
+
+    <!-- Footer of the webpage -->
+    <footer class="footer-bcolor">
+        <div class="social-media">
+            <!-- Social media links -->
+            <a href="https://facebook.com" class="footer-link" target="_blank">
+                <img src="image/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" class="footer-link" target="_blank">
+                <img src="image/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" class="footer-link" target="_blank">
+                <img src="image/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com" class="footer-link" target="_blank">
+                <img src="image/tiktok-icon.png" alt="Tiktok" class="social-icon">
+            </a>
+        </div>
+        <p class="footer-text">Copyright Cozy cafe &copy;</p><br> 
+    </footer>
+
+</body>
+
+</html>
